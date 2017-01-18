@@ -18,7 +18,7 @@ mydata2$NEWDT<-as.character(paste(mydata2$Date, mydata2$Time, sep = ""))
 mydata2$newdate2<-strptime(mydata2$NEWDT, "%d/%m/%Y %H: %M: %S")
 
 ##############
-png(file="plot4.pdf",width=480,height=480)
+png(file="plot4.png",width=480,height=480)
 par(mfrow=c(2,2))
 plot(mydata2$newdate2,mydata2$Global_active_power, type="n",xlab="",ylab="Global Active Power")
 lines(mydata2$newdate2,mydata2$Global_active_power)

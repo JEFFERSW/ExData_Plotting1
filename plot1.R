@@ -20,7 +20,7 @@ mydata2$newdate2<-strptime(mydata2$NEWDT, "%d/%m/%Y %H: %M: %S")
 #open PDF plotter, set height and width 
 #set one by one graph
 par(mfrow=c(1,1))
-png(file="plot1.pdf",width=480,height=480)
+png(file="plot1.png",width=480,height=480)
 hist(mydata2$Global_active_power, breaks=12, col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power") 
 dev.off()
 #############################

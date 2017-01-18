@@ -18,7 +18,7 @@ mydata2$NEWDT<-as.character(paste(mydata2$Date, mydata2$Time, sep = ""))
 mydata2$newdate2<-strptime(mydata2$NEWDT, "%d/%m/%Y %H: %M: %S")
 #Set one by one graph
 par(mfrow=c(1,1))
-png(file="plot2.pdf",width=480,height=480)
+png(file="plot2.png",width=480,height=480)
 plot(mydata2$newdate2,mydata2$Global_active_power, type="n",xlab="",ylab="Global Active Power (kilowatts)")
 lines(mydata2$newdate2,mydata2$Global_active_power)
 dev.off()

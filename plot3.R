@@ -19,7 +19,7 @@ mydata2$newdate2<-strptime(mydata2$NEWDT, "%d/%m/%Y %H: %M: %S")
 #Set one by one graph
 par(mfrow=c(1,1))
 ####################
-png(file="plot3.pdf",width=480,height=480)
+png(file="plot3.png",width=480,height=480)
 
 plot(mydata2$newdate2,mydata2$Sub_metering_1, type="n",xlab="",ylab="Energy sub metering")
 lines(mydata2$newdate2,mydata2$Sub_metering_1,col="black")
